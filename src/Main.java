@@ -24,7 +24,7 @@ public class Main {
 
         Locale.setDefault(Locale.US);
         Scanner scanner = new Scanner(System.in);
-        Path path = Paths.get("src/employeers.csv"); //Caminho do arquivo
+        Path path = Paths.get("employes.csv"); //Caminho do arquivo
 
         try (BufferedReader br = Files.newBufferedReader(path)) {
             List<Employee> employeeList = br.lines().filter(lines -> !lines.trim().isEmpty())
